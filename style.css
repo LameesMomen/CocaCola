@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #161616;
+}
+
+.circle-background {
+    background-color: #e51e2a;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(70% at right -20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.content {
+    padding: 60px;
+}
+
+.content .title h1 {
+    color: white;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.content .learnmore {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #e51e2a;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.content .learnmore a {
+    text-decoration: none;
+    color: white;
+}
+
+.content .learnmore:hover {
+    background-color: #97121b;
+}
+
+.content .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 150px;
+    filter: invert(1);
+}
+
+.content .links a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.content .links a:hover {
+    transform: scale(1.5) skewX(20deg);
+}
+
+
+/* =====Swiper Slide ====== */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: absolute;
+    bottom: 0;
+    min-height: 100%;
+}
+
+.content .imgbox img {
+    max-width: 150px;
+    max-height: 20px;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
